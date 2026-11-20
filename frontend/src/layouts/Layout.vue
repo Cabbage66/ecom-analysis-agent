@@ -19,6 +19,18 @@
           <el-icon><icon-menu /></el-icon>
           <span>系统首页</span>
         </el-menu-item>
+        <el-menu-item index="/manager/products">
+          <el-icon><Goods /></el-icon>
+          <span>商品列表</span>
+        </el-menu-item>
+        <el-menu-item index="/manager/orders">
+          <el-icon><Tickets /></el-icon>
+          <span>订单列表</span>
+        </el-menu-item>
+        <el-menu-item index="/manager/reviews">
+          <el-icon><ChatDotRound /></el-icon>
+          <span>评价列表</span>
+        </el-menu-item>
         <el-menu-item v-if="userInfo?.role === 'admin'" index="/manager/user">
           <el-icon><User /></el-icon>
           <span>用户管理</span>
@@ -72,6 +84,9 @@ import {
   Menu as IconMenu,
   User,
   DataAnalysis,
+  Goods,
+  Tickets,
+  ChatDotRound,
   UserFilled,
   Lock,
   SwitchButton
@@ -86,6 +101,9 @@ const LAYOUT_LOCK_CLASS = 'admin-layout-lock'
 
 const TITLE_MAP = {
   '/manager/home': '系统首页',
+  '/manager/products': '商品列表',
+  '/manager/orders': '订单列表',
+  '/manager/reviews': '评价列表',
   '/manager/user': '用户管理',
   '/manager/profile': '个人信息',
   '/manager/password': '修改密码'

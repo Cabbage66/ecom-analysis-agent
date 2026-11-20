@@ -14,6 +14,13 @@ const router = createRouter({
         { path: 'profile', name: 'Profile', component: () => import('@/views/Profile.vue') },
         { path: 'password', name: 'Password', component: () => import('@/views/Password.vue') },
         { path: 'user', name: 'User', component: () => import('@/views/User.vue') },
+        {
+          path: 'products',
+          name: 'ProductList',
+          component: () => import('@/views/ProductList.vue')
+        },
+        { path: 'orders', name: 'OrderList', component: () => import('@/views/OrderList.vue') },
+        { path: 'reviews', name: 'ReviewList', component: () => import('@/views/ReviewList.vue') }
       ]
     },
     { path: '/login', name: 'Login', component: () => import('@/views/Login.vue') },

@@ -4,6 +4,9 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.staticfiles import StaticFiles
 from app.config import UPLOAD_DIR
 from app.models.user import User
+from app.models.product import Product
+from app.models.order import Order
+from app.models.review import Review
 from app.database import Base, engine
 from app.api import api
 from starlette.middleware.cors import CORSMiddleware
