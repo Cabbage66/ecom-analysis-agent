@@ -19,6 +19,10 @@
           <el-icon><icon-menu /></el-icon>
           <span>系统首页</span>
         </el-menu-item>
+        <el-menu-item index="/manager/chat">
+          <el-icon><ChatLineRound /></el-icon>
+          <span>数据分析对话</span>
+        </el-menu-item>
         <el-menu-item index="/manager/products">
           <el-icon><Goods /></el-icon>
           <span>商品列表</span>
@@ -87,6 +91,7 @@ import {
   Goods,
   Tickets,
   ChatDotRound,
+  ChatLineRound,
   UserFilled,
   Lock,
   SwitchButton
@@ -101,6 +106,7 @@ const LAYOUT_LOCK_CLASS = 'admin-layout-lock'
 
 const TITLE_MAP = {
   '/manager/home': '系统首页',
+  '/manager/chat': '数据分析对话',
   '/manager/products': '商品列表',
   '/manager/orders': '订单列表',
   '/manager/reviews': '评价列表',
